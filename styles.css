@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #131112;
+}
+
+a {
+ text-decoration: none;
+}
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.big_card{ 
+    border: 7px double #ED9DA5;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big_card h1{
+    margin: 100px 0 70px;
+    font-size: 2.2rem;
+    cursor:pointer;
+}
+
+.hero_sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 32vw;
+    margin-left: 70px;
+}
+
+.big_card h2{
+    margin-bottom: 10px;
+    color: #7B435B;
+    align-self: flex-start;
+}
+
+.excerpt {
+    font-family: sans-serif;
+}
+
+.circle {
+    transition: .4s;
+    color: #6E6E6E;
+}
+
+.circle:hover {
+    transition: .4s;
+    color: #ED9DA5;
+}
+
+.swim {
+    color: #7796CB;
+    transition: .4s;
+}
+
+.swim:hover {
+    transition: .4s;
+    color: #ED9DA5;
+}
+
+.card {
+    border: 5px double #131112;
+    width: 180px;
+    height: 220px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.card:hover {
+    transition: .3s;
+    transform: scale(1.1);
+    border-color: #7B435B;
+    box-shadow: 0px 0px 11px 1px rgba(123,67,91,0.75);
+}
+
+.swimming{
+    background-image: url(/images/Swimming_Mac.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circles{
+    background-image: url(/images/Circles_Mac.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card_sect {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 30%;
+}
+
+.footer {
+    margin-left: 12px;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    font-family: sans-serif;
+    font-size: .6rem;
+}
