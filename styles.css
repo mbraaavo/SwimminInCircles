@@ -132,14 +132,14 @@ a {
 }
 
 .swimming{
-    background-image: url(Swimming_Mac.png);
+    background-image: url("images/Swimming_Mac.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .circles{
-    background-image: url(Circles_Mac.jpg);
+    background-image: url("images/Circles_Mac.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
