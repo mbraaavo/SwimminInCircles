@@ -59,7 +59,10 @@ a {
     align-items: center;
     width: 32vw;
     height: 60vh;
-    animation: drop-in-load 1.9s;
+    animation: drop-in-load 1.4s;
+    animation-delay: .5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .big_card h2{
@@ -109,7 +112,6 @@ a {
     height: 100%;
     cursor: pointer;
     transition: .4s;
-    animation: drop-in-load 1.7s;
 }
 
 @keyframes drop-in-load{
@@ -136,6 +138,10 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    animation: drop-in-load 1.4s;
+    animation-delay: .8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .circles{
@@ -143,6 +149,10 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    animation: drop-in-load 1.4s;
+    opacity: 0;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
 }
 
 .card_sect {
@@ -173,7 +183,10 @@ a {
     width: 80%;
     line-height: 1.4rem;
     font-family: 'Poppins', sans-serif;
-    animation: drop-in-load 1.8s;
+    animation: drop-in-load 1.5s;
+    animation-delay: .6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 @media (max-width: 1169px) and (orientation: portrait) {
