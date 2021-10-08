@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -41,24 +43,35 @@ a {
 .hero_sect {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;  
+    align-items: center;
     width: 32vw;
-    margin-left: 70px;
+    height: 60vh;
 }
 
 .big_card h2{
     margin-bottom: 10px;
-    color: #7B435B;
-    align-self: flex-start;
+    color: #131112;
+    font-family: 'Poppins', serif;
 }
+
+.name {
+    color: #ED9DA5;
+}
+
 
 .excerpt {
     font-family: sans-serif;
+    width: 68%;
+    height: 100%;
 }
+
+
 
 .circle {
     transition: .4s;
     color: #6E6E6E;
+    font-family: 'Poppins', serif;
 }
 
 .circle:hover {
@@ -69,6 +82,7 @@ a {
 .swim {
     color: #7796CB;
     transition: .4s;
+    font-family: 'Poppins', serif;
 }
 
 .swim:hover {
@@ -108,10 +122,32 @@ a {
 .card_sect {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     height: 50%;
 }
 
+.rating {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #131112;
+}
+
+.pink {
+    color: #ED9DA5;
+}
+
+.grey {
+    color: #6E6E6E;
+}
+
+.blue {
+    color: #7796CB;
+}
+
+.review {
+    width: 80%;
+    line-height: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
 
 @media (max-width: 1169px) {
     .card_sect{
@@ -121,41 +157,55 @@ a {
     }
 
     .hero_sect{
-        width: 60%;
+        width: 70%;
         font-size: 15px;
     }
 
     .card {
         width: 30%;
-        height: 100%;
+        height: 80%;
     }
 
+    .big_card {
+        width: 75vw;
+    }
+    
     .big_card h1{
         margin: 60px 0 40px;
     }
 }
 @media (max-width: 769px) {
     .yin-yang {
-        height: 8px;
+        height: 12px;
+    }
+
+    .big_card {
+        width: 80vw;
     }
 
     .big_card h1{
         font-size: .8rem;
-        margin-bottom: 20px;
+        margin-bottom: 52px;
     }
 
-    .yin-yang {
-        height: 12px;
-    }
 
     .card {
-        height: 70%;
+        width: 50%;
+        height: 65%;
     }
 
     .hero_sect {
-        width: 90%;
+        width: 95%;
         font-size: 10px;
         margin-left: 0;
+    }
+
+    .rating h2 {
+        font-size: 1rem;
+    }
+
+    .content {
+        font-size: .7rem;
     }
 
 }
