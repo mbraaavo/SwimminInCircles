@@ -46,7 +46,7 @@ a {
 }
 
 .big_card h1{
-    margin: 65px 0 50px;
+    margin: 65px 0 30%;
     font-size: 2.2rem;
     cursor:pointer;
     animation: drop-in-load 1.7s;
@@ -245,4 +245,17 @@ a {
     align-items: flex-end;
     font-family: sans-serif;
     font-size: .6rem;
+    animation: side-fade-in 1.9s;
+}
+
+@keyframes side-fade-in {
+    0%{
+        opacity: 0;
+        transform: translateX(-1%);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateX(0);
+    }
 }
