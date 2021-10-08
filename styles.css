@@ -32,12 +32,24 @@ a {
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 0px 15px 0px rgba(123,67,91,0.4);
+    animation: fade-in-load 1.5s;
+}
+
+@keyframes fade-in-load {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
 }
 
 .big_card h1{
-    margin: 100px 0 70px;
+    margin: 65px 0 50px;
     font-size: 2.2rem;
     cursor:pointer;
+    animation: drop-in-load 1.7s;
 }
 
 .hero_sect {
@@ -47,6 +59,7 @@ a {
     align-items: center;
     width: 32vw;
     height: 60vh;
+    animation: drop-in-load 1.9s;
 }
 
 .big_card h2{
@@ -62,7 +75,7 @@ a {
 
 .excerpt {
     font-family: sans-serif;
-    width: 68%;
+    width: 80%;
     height: 100%;
 }
 
@@ -96,6 +109,19 @@ a {
     height: 100%;
     cursor: pointer;
     transition: .4s;
+    animation: drop-in-load 1.7s;
+}
+
+@keyframes drop-in-load{
+    0%{
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
 }
 
 .card:hover {
@@ -147,6 +173,7 @@ a {
     width: 80%;
     line-height: 1.4rem;
     font-family: 'Poppins', sans-serif;
+    animation: drop-in-load 1.8s;
 }
 
 @media (max-width: 1169px) {
@@ -174,7 +201,7 @@ a {
         margin: 60px 0 40px;
     }
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     .yin-yang {
         height: 12px;
     }
@@ -205,7 +232,8 @@ a {
     }
 
     .content {
-        font-size: .7rem;
+        font-size: .5rem;
+        line-height: .8rem;
     }
 
 }
