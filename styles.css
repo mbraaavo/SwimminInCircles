@@ -46,7 +46,7 @@ a {
 }
 
 .big_card h1{
-    margin: 65px 0 30%;
+    margin: 65px 0 12%;
     font-size: 2.2rem;
     cursor:pointer;
     animation: drop-in-load 1.7s;
